@@ -1,0 +1,24 @@
+{
+	"name": "silverstripe-australia/silverstripe-question-answer",
+	"description": "Simple implementation of an FAQ page",
+	"type": "silverstripe-module",
+	"keywords": ["silverstripe", "templates", "themes"],
+	"license": "BSD-2-Clause",
+	"authors": [
+	{
+		"name": "Marcus Nyeholt",
+		"email": "marcus@silverstripe.com.au"
+	}
+	],
+	"extra": {
+		"installer-name": "questionanswer",
+		"branch-alias": {
+			"dev-master": "1.0.x-dev"
+		}
+	},
+	"require":
+	{
+		"silverstripe-australia/gridfieldextensions": "~1.1",
+		"silverstripe/multivaluefield": "~2.0"
+	}
+}
