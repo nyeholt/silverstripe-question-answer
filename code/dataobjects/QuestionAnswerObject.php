@@ -10,6 +10,8 @@ class QuestionAnswerObject extends DataObject {
 		'Sort'		=> 'Int',
 	);
 	
+	private static $has_one = array('Image' => 'Image');
+	
 	private static $belongs_many_many = array(
 		'Pages'		=> 'QuestionAnswerPage',
 	);
@@ -18,7 +20,6 @@ class QuestionAnswerObject extends DataObject {
 		'Title',
 		'Content',
 	);
-	
 	
 	private static $default_sort = 'Sort';
 	

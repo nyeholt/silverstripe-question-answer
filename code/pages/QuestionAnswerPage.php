@@ -63,13 +63,14 @@ class QuestionAnswerPage extends Page {
 	public function storeQuestionData($noWrite = false) {
 		if ($this->ID) {
 			$this->StoredQuestions = $this->Questions()->map('Title', 'Content')->toArray();
+			
+			$this->extend('updateStoredQuestions');
+			
 			if (!$noWrite) {
 				$this->write();
 			}
 		}
 	}
-	
-	
 }
 
 class QuestionAnswerPage_Controller extends Page_Controller {
